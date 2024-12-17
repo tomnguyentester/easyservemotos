@@ -1,0 +1,333 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Report_Testing_EasyEngine">
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="appURL"
+               value="https://motorserve-booking.siliconstack.com.au/"/>
+
+    <listeners>
+        <listener class-name="com.easyserv.listeners.ReportListener"></listener>
+    </listeners>
+
+    <test name="Test_Suite_Motoserve_UAT">
+        <classes>
+<!--                    <class name="com.easyserv.testcases.Motoserve.SelectPackageTest" />-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.MyProfileTest" />-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.LogOutTest" />-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.SearchStoreTest" />-->
+                    <class name="com.easyserv.testcases.Motoserve.SignUpTest" />
+                    <class name="com.easyserv.testcases.Motoserve.ResetPasswordTest" />
+<!--                    <class name="com.easyserv.testcases.Motoserve.SearchVehicleByRegoTest" />-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.SearchVehicleManuallyTest" />-->
+                    <class name="com.easyserv.testcases.Motoserve.EnquiriesTest" />
+                    <class name="com.easyserv.testcases.Motoserve.LoginTest" />
+<!--                    <class name="com.easyserv.testcases.Motoserve.ForgotPassTest" />-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.ProvideContactDetailTest" />-->
+        </classes>
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SelectPackageTest">-->
+<!--                <methods>-->
+<!--                    <include name="SelectPackagePages_TC001"/>-->
+<!--                    <include name="SelectPackagePages_TC002"/>-->
+<!--                    <include name="SelectPackagePages_TC003"/>-->
+<!--                    <include name="SelectPackagePages_TC004_1"/>-->
+<!--                    <include name="SelectPackagePages_TC004_2"/>-->
+<!--                    <include name="SelectPackagePages_TC004_3"/>-->
+<!--                    <include name="SelectPackagePages_TC004_4"/>-->
+<!--                    <include name="SelectPackagePages_TC005"/>-->
+<!--                    <include name="SelectPackagePages_TC006"/>-->
+<!--                    <include name="SelectPackagePages_TC007_1"/>-->
+<!--                    <include name="SelectPackagePages_TC007_2"/>-->
+<!--                    <include name="SelectPackagePages_TC007_3"/>-->
+<!--                    <include name="SelectPackagePages_TC007_4"/>-->
+<!--                    <include name="SelectPackagePages_TC008"/>-->
+<!--                    <include name="SelectPackagePages_TC009"/>-->
+<!--                    <include name="SelectPackagePages_TC010"/>-->
+<!--                    <include name="SelectPackagePages_TC011"/>-->
+<!--                    <include name="SelectPackagePages_TC012"/>-->
+<!--                    <include name="SelectPackagePages_TC013"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.MyProfileTest">-->
+<!--                <methods>-->
+<!--                    <include name="MyProfileTest_TC001"/>-->
+<!--                    <include name="MyProfileTest_TC002"/>-->
+<!--                    <include name="MyProfileTest_TC003"/>-->
+<!--                    <include name="MyProfileTest_TC004"/>-->
+<!--                    <include name="MyProfileTest_TC005"/>-->
+<!--                    <include name="MyProfileTest_TC006"/>-->
+<!--                    <include name="MyProfileTest_TC007"/>-->
+<!--                    <include name="MyProfileTest_TC008"/>-->
+<!--                    <include name="MyProfileTest_TC009"/>-->
+<!--                    <include name="MyProfileTest_TC010"/>-->
+<!--                    <include name="MyProfileTest_TC011"/>-->
+<!--                    <include name="MyProfileTest_TC012"/>-->
+<!--                    <include name="MyProfileTest_TC013"/>-->
+<!--                    <include name="MyProfileTest_TC014"/>-->
+<!--                    <include name="MyProfileTest_TC015"/>-->
+<!--                    <include name="MyProfileTest_TC016"/>-->
+<!--                    <include name="MyProfileTest_TC017"/>-->
+<!--                    <include name="MyProfileTest_TC018"/>-->
+<!--                    <include name="MyProfileTest_TC019"/>-->
+<!--                    <include name="MyProfileTest_TC020"/>-->
+<!--                    <include name="MyProfileTest_TC021"/>-->
+<!--                    <include name="MyProfileTest_TC022"/>-->
+<!--                    <include name="MyProfileTest_TC023"/>-->
+<!--                    <include name="MyProfileTest_TC024"/>-->
+<!--                    <include name="MyProfileTest_TC025"/>-->
+<!--                    <include name="MyProfileTest_TC026"/>-->
+<!--                    <include name="MyProfileTest_TC027"/>-->
+<!--                    <include name="MyProfileTest_TC028"/>-->
+<!--                    <include name="MyProfileTest_TC029"/>-->
+<!--                    <include name="MyProfileTest_TC030"/>-->
+<!--                    <include name="MyProfileTest_TC031"/>-->
+<!--                    <include name="MyProfileTest_TC032"/>-->
+<!--                    <include name="MyProfileTest_TC033"/>-->
+<!--                    <include name="MyProfileTest_TC034"/>-->
+<!--                    <include name="MyProfileTest_TC035"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.LogOutTest">-->
+<!--                <methods>-->
+<!--                    <include name="LogOutTest_TC001"/>-->
+<!--                    <include name="LogOutTest_TC002"/>-->
+<!--                    <include name="LogOutTest_TC003"/>-->
+<!--                    <include name="LogOutTest_TC004"/>-->
+<!--                    <include name="LogOutTest_TC005"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--                <classes>-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.SearchStoreTest">-->
+<!--                        <methods>-->
+<!--                            <include name="SearchStoreTest_TC001"/>-->
+<!--                            <include name="SearchStoreTest_TC002"/>-->
+<!--                            <include name="SearchStoreTest_TC003"/>-->
+<!--                            <include name="SearchStoreTest_TC004"/>-->
+<!--                            <include name="SearchStoreTest_TC005"/>-->
+<!--                            <include name="SearchStoreTest_TC006"/>-->
+<!--                            <include name="SearchStoreTest_TC007"/>-->
+<!--                            <include name="SearchStoreTest_TC008"/>-->
+<!--                            <include name="SearchStoreTest_TC009"/>-->
+<!--                            <include name="SearchStoreTest_TC010"/>-->
+<!--                            <include name="SearchStoreTest_TC011"/>-->
+<!--                            <include name="SearchStoreTest_TC012"/>-->
+<!--                            <include name="SearchStoreTest_TC013"/>-->
+<!--                            <include name="SearchStoreTest_TC014"/>-->
+<!--                        </methods>-->
+<!--                    </class>-->
+<!--                </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SignUpTest">-->
+<!--                <methods>-->
+<!--                    <include name="SignUpTest_TC001"/>-->
+<!--                    <include name="SignUpTest_TC002"/>-->
+<!--                    <include name="SignUpTest_TC003"/>-->
+<!--                    <include name="SignUpTest_TC004"/>-->
+<!--                    <include name="SignUpTest_TC005"/>-->
+<!--                    <include name="SignUpTest_TC006"/>-->
+<!--                    <include name="SignUpTest_TC007"/>-->
+<!--                    <include name="SignUpTest_TC008"/>-->
+<!--                    <include name="SignUpTest_TC009"/>-->
+<!--                    <include name="SignUpTest_TC010"/>-->
+<!--                    <include name="SignUpTest_TC011"/>-->
+<!--                    <include name="SignUpTest_TC012"/>-->
+<!--                    <include name="SignUpTest_TC013"/>-->
+<!--                    <include name="SignUpTest_TC014"/>-->
+<!--                    <include name="SignUpTest_TC015"/>-->
+<!--                    <include name="SignUpTest_TC016"/>-->
+<!--                    <include name="SignUpTest_TC017"/>-->
+<!--                    <include name="SignUpTest_TC018"/>-->
+<!--                    <include name="SignUpTest_TC019"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.ResetPasswordTest">-->
+<!--                <methods>-->
+<!--                    <include name="ResetPasswordTest_TC001"/>-->
+<!--                    <include name="ResetPasswordTest_TC002"/>-->
+<!--                    <include name="ResetPasswordTest_TC003"/>-->
+<!--                    <include name="ResetPasswordTest_TC004"/>-->
+<!--                    <include name="ResetPasswordTest_TC005"/>-->
+<!--                    <include name="ResetPasswordTest_TC006"/>-->
+<!--                    <include name="ResetPasswordTest_TC007"/>-->
+<!--                    <include name="ResetPasswordTest_TC009"/>-->
+<!--                    <include name="ResetPasswordTest_TC009"/>-->
+<!--                    <include name="ResetPasswordTest_TC010"/>-->
+<!--                    <include name="ResetPasswordTest_TC011"/>-->
+<!--                    <include name="ResetPasswordTest_TC012"/>-->
+<!--                    <include name="ResetPasswordTest_TC013"/>-->
+<!--                    <include name="ResetPasswordTest_TC014"/>-->
+<!--                    <include name="ResetPasswordTest_TC015"/>-->
+<!--                    <include name="ResetPasswordTest_TC016"/>-->
+<!--                    <include name="ResetPasswordTest_TC017"/>-->
+<!--                    <include name="ResetPasswordTest_TC018"/>-->
+<!--                    <include name="ResetPasswordTest_TC019"/>-->
+<!--                    <include name="ResetPasswordTest_TC020"/>-->
+<!--                    <include name="ResetPasswordTest_TC021"/>-->
+<!--                    <include name="ResetPasswordTest_TC022"/>-->
+<!--                    <include name="ResetPasswordTest_TC023"/>-->
+<!--                    <include name="ResetPasswordTest_TC024"/>-->
+<!--                    <include name="ResetPasswordTest_TC025"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.ProvideContactDetailTest">-->
+<!--                <methods>-->
+<!--                    <include name="ProvideContactTest_TC001"/>-->
+<!--&lt;!&ndash;                    <include name="ProvideContactTest_TC002"/>                                 &ndash;&gt;-->
+<!--                    <include name="ProvideContactTest_TC003"/>-->
+<!--                    <include name="ProvideContactTest_TC004"/>-->
+<!--                    <include name="ProvideContactTest_TC005"/>-->
+<!--                    <include name="ProvideContactTest_TC006"/>-->
+<!--                    <include name="ProvideContactTest_TC007"/>-->
+<!--                    <include name="ProvideContactTest_TC008"/>-->
+<!--                    <include name="ProvideContactTest_TC009"/>-->
+<!--                    <include name="ProvideContactTest_TC010"/>-->
+<!--                    <include name="ProvideContactTest_TC011"/>-->
+<!--                    <include name="ProvideContactTest_TC012"/>-->
+<!--                    <include name="ProvideContactTest_TC013"/>-->
+<!--                    <include name="ProvideContactTest_TC014"/>-->
+<!--                    <include name="ProvideContactTest_TC015"/>-->
+<!--                    <include name="ProvideContactTest_TC016"/>-->
+<!--                    <include name="ProvideContactTest_TC017"/>-->
+<!--                    <include name="ProvideContactTest_TC018"/>-->
+<!--                    <include name="ProvideContactTest_TC019"/>-->
+<!--                    <include name="ProvideContactTest_TC020"/>-->
+<!--                    <include name="ProvideContactTest_TC021"/>-->
+<!--                    <include name="ProvideContactTest_TC022"/>-->
+<!--                    <include name="ProvideContactTest_TC023"/>-->
+<!--                    <include name="ProvideContactTest_TC024"/>-->
+<!--                    <include name="ProvideContactTest_TC025"/>-->
+<!--                    <include name="ProvideContactTest_TC026"/>-->
+<!--                    <include name="ProvideContactTest_TC027"/>-->
+<!--                    <include name="ProvideContactTest_TC028"/>-->
+<!--                    <include name="ProvideContactTest_TC029"/>-->
+<!--                    <include name="ProvideContactTest_TC030"/>-->
+<!--                    <include name="ProvideContactTest_TC031"/>-->
+<!--                    <include name="ProvideContactTest_TC032"/>-->
+<!--                    <include name="ProvideContactTest_TC033"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SearchVehicleByRegoTest">-->
+<!--                <methods>-->
+<!--                    <include name="SearchVehicleRegoTest_TC001"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC002"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC003"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC004"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC005"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC006"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC007"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC008"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC009"/>-->
+<!--                    <include name="SearchVehicleRegoTest_TC010"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SearchVehicleManuallyTest">-->
+<!--                <methods>-->
+<!--                    <include name="SearchVehicleManually_TC001"/>-->
+<!--                    <include name="SearchVehicleManually_TC002"/>-->
+<!--                    <include name="SearchVehicleManually_TC003"/>-->
+<!--                    <include name="SearchVehicleManually_TC004"/>-->
+<!--                    <include name="SearchVehicleManually_TC005"/>-->
+<!--                    <include name="SearchVehicleManually_TC006"/>-->
+<!--                    <include name="SearchVehicleManually_TC007"/>-->
+<!--                    <include name="SearchVehicleManually_TC008"/>-->
+<!--                    <include name="SearchVehicleManually_TC009"/>-->
+<!--                    <include name="SearchVehicleManually_TC010"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+
+
+<!--                <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.EnquiriesTest">-->
+<!--                <methods>-->
+<!--                    <include name="EnquiriesTest_TC001"/>-->
+<!--                    <include name="EnquiriesTest_TC002"/>-->
+<!--                    <include name="EnquiriesTest_TC003"/>-->
+<!--                    <include name="EnquiriesTest_TC004"/>-->
+<!--                    <include name="EnquiriesTest_TC005"/>-->
+<!--                    <include name="EnquiriesTest_TC006"/>-->
+<!--                    <include name="EnquiriesTest_TC007"/>-->
+<!--                    <include name="EnquiriesTest_TC008"/>-->
+<!--                    <include name="EnquiriesTest_TC009"/>-->
+<!--                    <include name="EnquiriesTest_TC010"/>-->
+<!--                    <include name="EnquiriesTest_TC011"/>-->
+<!--                    <include name="EnquiriesTest_TC012"/>-->
+<!--                    <include name="EnquiriesTest_TC013"/>-->
+<!--                    <include name="EnquiriesTest_TC014"/>-->
+<!--                    <include name="EnquiriesTest_TC015"/>-->
+<!--                    <include name="EnquiriesTest_TC016"/>-->
+<!--                    <include name="EnquiriesTest_TC017"/>-->
+<!--                    <include name="EnquiriesTest_TC018"/>-->
+<!--                    <include name="EnquiriesTest_TC019"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.LoginTest">-->
+<!--                <methods>-->
+<!--                    <include name="LoginTest_TC001"/>-->
+<!--                    <include name="LoginTest_TC002"/>-->
+<!--                    <include name="LoginTest_TC003"/>-->
+<!--                    <include name="LoginTest_TC004"/>-->
+<!--                    <include name="LoginTest_TC005"/>-->
+<!--                    <include name="LoginTest_TC006"/>-->
+<!--                    <include name="LoginTest_TC007"/>-->
+<!--                    <include name="LoginTest_TC008"/>-->
+<!--                    <include name="LoginTest_TC009"/>-->
+<!--                    <include name="LoginTest_TC010"/>-->
+<!--                    <include name="LoginTest_TC011"/>-->
+<!--                    <include name="LoginTest_TC012"/>-->
+<!--                    <include name="LoginTest_TC013"/>-->
+<!--                    <include name="LoginTest_TC014"/>-->
+<!--                    <include name="LoginTest_TC015"/>-->
+<!--                    <include name="LoginTest_TC016"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+
+<!--                <classes>-->
+<!--                    <class name="com.easyserv.testcases.Motoserve.ForgotPassTest">-->
+<!--                        <methods>-->
+<!--                            <include name="ForgotPassTest_TC001"/>-->
+<!--                            <include name="ForgotPassTest_TC002"/>-->
+<!--                            <include name="ForgotPassTest_TC003"/>-->
+<!--                            <include name="ForgotPassTest_TC004"/>-->
+<!--                            <include name="ForgotPassTest_TC005"/>-->
+<!--                            <include name="ForgotPassTest_TC006"/>-->
+<!--                            <include name="ForgotPassTest_TC007"/>-->
+<!--                            <include name="ForgotPassTest_TC008"/>-->
+<!--                            <include name="ForgotPassTest_TC009"/>-->
+<!--                            <include name="ForgotPassTest_TC010"/>-->
+<!--                            <include name="ForgotPassTest_TC011"/>-->
+<!--                            <include name="ForgotPassTest_TC012"/>-->
+<!--                        </methods>-->
+<!--                    </class>-->
+<!--                </classes>-->
+
+    </test>
+</suite>

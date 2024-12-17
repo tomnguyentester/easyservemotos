@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Report_Testing_WeCRM">
+    <parameter name="browserType" value="chrome"/>
+    <parameter name="appURL"
+               value="https://tractioncrm.pentanasolutions.com/auth/login"/>
+
+    <listeners>
+        <listener class-name="com.easyserv.listeners.ReportListener"></listener>
+    </listeners>
+
+    <test name="Test_Suite_WeCRM">
+<!--        <classes>-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SelectPackageTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.MyProfileTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.LogOutTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SearchStoreTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SignUpTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.ResetPasswordTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SearchVehicleByRegoTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.SearchVehicleManuallyTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.EnquiriesTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.LoginTest" />-->
+<!--            <class name="com.easyserv.testcases.Motoserve.ForgotPassTest" />-->
+<!--            &lt;!&ndash;                    <class name="com.easyserv.testcases.Motoserve.ProvideContactDetailTest" />&ndash;&gt;-->
+<!--        </classes>-->
+
+                <classes>
+                    <class name="com.easyserv.testcases.WeCRM.CustomerPMTest">
+                        <methods>
+<!--                            <include name="CustomerSearchTest_TC001"/>-->
+<!--                            <include name="CustomerSearchTest_TC002"/>-->
+<!--                            <include name="CustomerSearchTest_TC003"/>-->
+<!--                            <include name="CustomerSearchTest_TC004"/>-->
+<!--                            <include name="CustomerSearchTest_TC005"/>-->
+                            <include name="CustomerCompare"/>
+                        </methods>
+                    </class>
+                </classes>
+    </test>
+</suite>
