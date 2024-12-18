@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="603.116" tests="115" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="webdriver.chrome.driver" value="resources\drivers\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\SiliconStackProject\easyservemotos\easyservemotos\target\test-classes;C:\SiliconStackProject\easyservemotos\easyservemotos\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.2\selenium-java-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.2\selenium-api-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.2\selenium-chrome-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.2\selenium-chromium-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.2\selenium-json-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.2\selenium-devtools-v106-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.2\selenium-devtools-v107-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.2\selenium-devtools-v108-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.2\selenium-devtools-v85-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.2\selenium-edge-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.2\selenium-firefox-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.2\selenium-http-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.2\selenium-ie-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.2\selenium-remote-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.2\selenium-manager-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.2\selenium-safari-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.2\selenium-support-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-simple\2.0.6\slf4j-simple-2.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\datafaker\datafaker\2.3.1\datafaker-2.3.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.41\libphonenumber-8.13.41.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Saigon"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire8809553621358885334\surefirebooter-20241218092825655_3.jar C:\Windows\Temp\surefire8809553621358885334 2024-12-18T09-28-25_170-jvmRun1 surefire-20241218092825655_1tmp surefire_0-20241218092825655_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\SiliconStackProject\easyservemotos\easyservemotos\target\test-classes;C:\SiliconStackProject\easyservemotos\easyservemotos\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.2\selenium-java-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.2\selenium-api-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.2\selenium-chrome-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.2\selenium-chromium-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.2\selenium-json-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.2\selenium-devtools-v106-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.2\selenium-devtools-v107-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.2\selenium-devtools-v108-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.2\selenium-devtools-v85-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.2\selenium-edge-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.2\selenium-firefox-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.2\selenium-http-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.2\selenium-ie-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.2\selenium-remote-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.2\selenium-manager-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.2\selenium-safari-driver-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.2\selenium-support-4.7.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-simple\2.0.6\slf4j-simple-2.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.3.1\webdrivermanager-5.3.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\datafaker\datafaker\2.3.1\datafaker-2.3.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\curious-odd-man\rgxgen\2.0\rgxgen-2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.13.41\libphonenumber-8.13.41.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-09-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\SiliconStackProject\easyservemotos\easyservemotos"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire8809553621358885334\surefirebooter-20241218092825655_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19+36-2238"/>
+    <property name="user.name" value="DESKTOP-GFKKN7N$"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\WINDOWS\system32\config\systemprofile\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
+    <property name="java.version" value="19"/>
+    <property name="user.dir" value="C:\SiliconStackProject\easyservemotos\easyservemotos"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\apache-maven-3.8.6/bin;C:\Program Files\Java\jdk-19/bin;C:\Program Files\Java\jdk-19/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-19\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\WireGuard\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19+36-2238"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="SignUpTest_TC001" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="2.779">
+    <system-out><![CDATA[2024-12-18 09:28:27,445 main ERROR File contains an invalid element or attribute "filePattern"
+[INFO] 18-12-2024 09:28:27 [main] Log - Start testing Test_Suite_Motoserve_UAT
+Launching Chrome browser...
+[INFO] 18-12-2024 09:28:34 [main] Log - SignUpTest_TC001 test is starting...
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 131.0.6778.85 (3d81e41b6f3ac8bcae63b32e8145c9eb0cd60a2d-refs/branch-heads/6778@{#2285}) on port 27732
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 27732.
+Dec 18, 2024 9:28:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+Dec 18, 2024 9:28:30 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="SignUpTest_TC002" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="1.856">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:37 [main] Log - SignUpTest_TC001 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC001
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:38 [main] Log - SignUpTest_TC002 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC003" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="1.747">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:40 [main] Log - SignUpTest_TC002 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC002
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:42 [main] Log - SignUpTest_TC003 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC004" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="1.841">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:43 [main] Log - SignUpTest_TC003 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC003
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:45 [main] Log - SignUpTest_TC004 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC005" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="1.656">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:47 [main] Log - SignUpTest_TC004 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC004
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:48 [main] Log - SignUpTest_TC005 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC006" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="1.495">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:49 [main] Log - SignUpTest_TC005 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC005
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:51 [main] Log - SignUpTest_TC006 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC007" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="2.284">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:52 [main] Log - SignUpTest_TC006 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC006
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:53 [main] Log - SignUpTest_TC007 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC008" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="5.666">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:28:56 [main] Log - SignUpTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:28:57 [main] Log - SignUpTest_TC008 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC009" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="4.161">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:03 [main] Log - SignUpTest_TC008 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC008
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:29:04 [main] Log - SignUpTest_TC009 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC010" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="4.987">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:08 [main] Log - SignUpTest_TC009 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC009
+Screenshot taken current URL: https://accounts.google.com/v3/signin/identifier?opparams=%253Fgis_params%253DCi5odHRwczovL21vdG9yc2VydmUtYm9va2luZy5zaWxpY29uc3RhY2suY29tLmF1Ei5odHRwczovL21vdG9yc2VydmUtYm9va2luZy5zaWxpY29uc3RhY2suY29tLmF1GAcqFlhzcUh6STZjWk12TFMzakJLTFRZencySDM1NDM0ODE4NjIwOC1sZ2dvODR0cjY5YWV1Y3R0NGZpMzA0NXI3ZnFvZmFvZi5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkA4OTJmMWFlMWQwN2E4ZjhlMGU4MzIxZjQ5ZDIzYWZlMDVjYmU5ODY1MGFhNzJlMzk1NGM3OTJmZTllYzI0ZWE5%2526origin%253Dhttps%25253A%25252F%25252Fmotorserve-booking.siliconstack.com.au%2526response_mode%253Dform_post&dsh=S1511641135%3A1734488944257097&client_id=354348186208-lggo84tr69aeuctt4fi3045r7fqofaof.apps.googleusercontent.com&ddm=1&display=popup&gsiwebsdk=gis_attributes&o2v=1&prompt=select_account&redirect_uri=https%3A%2F%2Fmotorserve-booking.siliconstack.com.au&response_type=id_token&scope=openid+email+profile&service=lso&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANc7dXmUWTF5C6ilNeEQP2cr0xLSmHty5IVNDKkum4g4D6ODVjJvuuwL8nAtDm-ueH_P6w_GglvHXD1GA44HHN4-A4P4b3esulLc31sH5YThhkSgm8ygvwhKhhCsgOqyjUOPJoMHU9HqFR2VbRoj_xxTBh-_ExwH24LQ_sFg9wrAOJfS2FJ8DIxpDW2vQ5yN5NFqIysdPZgvAQ13nZOQ_mTL6_iCtbrWUvtWL_kj4wM2IIo86pEBdkiPA_sGsQ5-fLf796RYYBmFAk5rnRwBSLF-5gKMU7Y8CRIwDsFhl9vQy5j2i2lJZybmG19_dUAGXVNmsHlqC51PIDqDBDzkdXBkKxLPcbFRglnUocgDmekCcLu2NzI3lbM8U4k9QiqXdZ9S7cLrpKVLeVc7Yh7CjOAxiEGC8seL49KpRMf-0WtAdI5GMOYGUN4il6wvSk2WkkkL7LNBJ-m6OfKWysh62898kjufVjwwzdtC31Fh3jqs8m5S0dKVk9TqX0XukLpZ0pR7_NK%26flowName%3DGeneralOAuthFlow%26as%3DS1511641135%253A1734488944257097%26client_id%3D354348186208-lggo84tr69aeuctt4fi3045r7fqofaof.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fmotorserve-booking.siliconstack.com.au&rart=ANgoxcex_AF01Cy-BJcVWQKWiwiKQM-yAayPJdtv3q2NHBb6kLy-CbSoIkdC5g0bAX_EM41eFB7ucRTdHXAyQJilfBE3Tyx-YyS5FUQfqfLgBq0w3wzGEUQ
+[INFO] 18-12-2024 09:29:10 [main] Log - SignUpTest_TC010 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC011" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="6.221">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:15 [main] Log - SignUpTest_TC010 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC010
+Screenshot taken current URL: https://www.facebook.com/login.php?skip_api_login=1&api_key=581474459864182&kid_directed_site=0&app_id=581474459864182&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D581474459864182%26auth_type%3Dreauthenticate%26cbt%3D1734488952873%26channel_url%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Dfb8dd5002ab2c9b20%2526domain%253Dmotorserve-booking.siliconstack.com.au%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fmotorserve-booking.siliconstack.com.au%25252Ffc85b2194eac21262%2526relation%253Dopener%26client_id%3D581474459864182%26display%3Dpopup%26domain%3Dmotorserve-booking.siliconstack.com.au%26e2e%3D%257B%257D%26fallback_redirect_uri%3Dhttps%253A%252F%252Fmotorserve-booking.siliconstack.com.au%252Fregister%26locale%3Den_US%26logger_id%3Dffead08ee767434a0%26origin%3D1%26redirect_uri%3Dhttps%253A%252F%252Fstaticxx.facebook.com%252Fx%252Fconnect%252Fxd_arbiter%252F%253Fversion%253D46%2523cb%253Df78c05aff963fbc9f%2526domain%253Dmotorserve-booking.siliconstack.com.au%2526is_canvas%253Dfalse%2526origin%253Dhttps%25253A%25252F%25252Fmotorserve-booking.siliconstack.com.au%25252Ffc85b2194eac21262%2526relation%253Dopener%2526frame%253Df5f1ee4dab0d45748%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%26return_scopes%3Dfalse%26scope%3Dpublic_profile%26sdk%3Djoey%26version%3Dv2.3%26ret%3Dlogin%26fbapp_pres%3D0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df78c05aff963fbc9f%26domain%3Dmotorserve-booking.siliconstack.com.au%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fmotorserve-booking.siliconstack.com.au%252Ffc85b2194eac21262%26relation%3Dopener%26frame%3Df5f1ee4dab0d45748%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied&display=popup&locale=en_GB&pl_dbl=0
+[INFO] 18-12-2024 09:29:16 [main] Log - SignUpTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC012" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="2.258">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:22 [main] Log - SignUpTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:29:23 [main] Log - SignUpTest_TC012 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC013" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="4.968">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:26 [main] Log - SignUpTest_TC012 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC012
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:29:27 [main] Log - SignUpTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC014" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="6.84">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:32 [main] Log - SignUpTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:29:35 [main] Log - SignUpTest_TC014 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC015" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="5.71">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:42 [main] Log - SignUpTest_TC014 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC014
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:29:43 [main] Log - SignUpTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC016" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="6.036">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:49 [main] Log - SignUpTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC015
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:29:50 [main] Log - SignUpTest_TC016 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC017" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="4.022">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:29:56 [main] Log - SignUpTest_TC016 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC016
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:29:58 [main] Log - SignUpTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC018" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.923">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:02 [main] Log - SignUpTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:04 [main] Log - SignUpTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[uydjeousyd](1)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="4.049">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:08 [main] Log - SignUpTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:09 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[09 826 837](2)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.701">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:13 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:14 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[022*&amp;%)888](3)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.135">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:18 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:19 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[1234567890](4)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.212">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:22 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:24 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[12 4@#67ab](5)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.74">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:27 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:28 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="SignUpTest_TC019[012345678](6)" classname="com.easyserv.testcases.Motoserve.SignUpTest" time="3.642">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:32 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:33 [main] Log - SignUpTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC001" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.045">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:37 [main] Log - SignUpTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: SignUpTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:30:38 [main] Log - ResetPasswordTest_TC001 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC002" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.288">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:42 [main] Log - ResetPasswordTest_TC001 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC001
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:30:44 [main] Log - ResetPasswordTest_TC002 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC003" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.097">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:48 [main] Log - ResetPasswordTest_TC002 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC002
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:30:49 [main] Log - ResetPasswordTest_TC003 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC004" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.076">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:53 [main] Log - ResetPasswordTest_TC003 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC003
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:30:55 [main] Log - ResetPasswordTest_TC004 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC005" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.885">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:30:59 [main] Log - ResetPasswordTest_TC004 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC004
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:31:00 [main] Log - ResetPasswordTest_TC005 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC006" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.831">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:04 [main] Log - ResetPasswordTest_TC005 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC005
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:31:05 [main] Log - ResetPasswordTest_TC006 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC007" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.026">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:10 [main] Log - ResetPasswordTest_TC006 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC006
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:31:12 [main] Log - ResetPasswordTest_TC007 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC008" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.598">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:16 [main] Log - ResetPasswordTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:31:17 [main] Log - ResetPasswordTest_TC008 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC009" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.886">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:22 [main] Log - ResetPasswordTest_TC008 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC008
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:31:23 [main] Log - ResetPasswordTest_TC009 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC010" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="5.86">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:28 [main] Log - ResetPasswordTest_TC009 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC009
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:31:30 [main] Log - ResetPasswordTest_TC010 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC011" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="5.191">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:36 [main] Log - ResetPasswordTest_TC010 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC010
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:31:37 [main] Log - ResetPasswordTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC012" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="24.576">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:31:43 [main] Log - ResetPasswordTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:31:46 [main] Log - ResetPasswordTest_TC012 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC013" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.976">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:10 [main] Log - ResetPasswordTest_TC012 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC012
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:12 [main] Log - ResetPasswordTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC014" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="4.313">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:16 [main] Log - ResetPasswordTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC013
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:17 [main] Log - ResetPasswordTest_TC014 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC015[123456](1)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.716">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:22 [main] Log - ResetPasswordTest_TC014 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC014
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/login
+[INFO] 18-12-2024 09:32:23 [main] Log - ResetPasswordTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC015[1234567](2)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.436">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:26 [main] Log - ResetPasswordTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC015
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:27 [main] Log - ResetPasswordTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC015[123456789!@#$%gabd32](3)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.736">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:30 [main] Log - ResetPasswordTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC015
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:31 [main] Log - ResetPasswordTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC015[abc%$#123jue_+7621d](4)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.41">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:34 [main] Log - ResetPasswordTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC015
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:35 [main] Log - ResetPasswordTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC016" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.001">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:38 [main] Log - ResetPasswordTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC015
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:39 [main] Log - ResetPasswordTest_TC016 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC017" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.885">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:42 [main] Log - ResetPasswordTest_TC016 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC016
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:44 [main] Log - ResetPasswordTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC018[123456](1)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.587">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:46 [main] Log - ResetPasswordTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC017
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:48 [main] Log - ResetPasswordTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC018[1234567](2)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.791">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:51 [main] Log - ResetPasswordTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC018
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:52 [main] Log - ResetPasswordTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC018[123456789!@#$%gabd32](3)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.563">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:55 [main] Log - ResetPasswordTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC018
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:32:56 [main] Log - ResetPasswordTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC018[abc%$#123jue_+7621d](4)" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="2.557">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:32:59 [main] Log - ResetPasswordTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC018
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:00 [main] Log - ResetPasswordTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC019" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.781">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:03 [main] Log - ResetPasswordTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC018
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:04 [main] Log - ResetPasswordTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC020" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.652">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:08 [main] Log - ResetPasswordTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC019
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:10 [main] Log - ResetPasswordTest_TC020 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC021" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.483">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:13 [main] Log - ResetPasswordTest_TC020 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC020
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:15 [main] Log - ResetPasswordTest_TC021 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC022" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.222">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:18 [main] Log - ResetPasswordTest_TC021 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC021
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:20 [main] Log - ResetPasswordTest_TC022 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC023" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="3.055">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:23 [main] Log - ResetPasswordTest_TC022 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC022
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:24 [main] Log - ResetPasswordTest_TC023 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC024" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="5.946">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:27 [main] Log - ResetPasswordTest_TC023 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC023
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:29 [main] Log - ResetPasswordTest_TC024 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="ResetPasswordTest_TC025" classname="com.easyserv.testcases.Motoserve.ResetPasswordTest" time="5.598">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:35 [main] Log - ResetPasswordTest_TC024 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC024
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:37 [main] Log - ResetPasswordTest_TC025 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC001" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.413">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:42 [main] Log - ResetPasswordTest_TC025 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: ResetPasswordTest_TC025
+Screenshot taken current URL: https://motorserve-booking-uat.siliconstack.com.au/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im5ndXllbnRydW5nZHR1QGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MjMwMTY1OTYsImV4cCI6MTcyMzAxODM5Nn0.yX9TCHP6Vyv5s0SyEeP7HmBF1YDuBY30Ja8kzZhAjJ0
+[INFO] 18-12-2024 09:33:44 [main] Log - EnquiriesTest_TC001 test is starting...
+Printer Status Select Store :true
+Printer Status first name :true
+Printer Status last name :true
+Printer Status email field :true
+Printer Status Your Enquiry field :true
+Printer Status Send Button :false
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC002" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.872">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:45 [main] Log - EnquiriesTest_TC001 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC001
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:33:46 [main] Log - EnquiriesTest_TC002 test is starting...
+Printer Privacy Header : MOTORSERVE PRIVACY POLICY
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC003" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.579">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:49 [main] Log - EnquiriesTest_TC002 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC002
+Screenshot taken current URL: https://motorserve.com.au/privacy-policy/
+[INFO] 18-12-2024 09:33:50 [main] Log - EnquiriesTest_TC003 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC004" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.446">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:52 [main] Log - EnquiriesTest_TC003 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC003
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:33:54 [main] Log - EnquiriesTest_TC004 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC005" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="3.411">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:33:56 [main] Log - EnquiriesTest_TC004 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC004
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:33:57 [main] Log - EnquiriesTest_TC005 test is starting...
+Printer Status first name :true
+Printer Status last name :true
+Printer Status last name :true
+Printer Status email field :true
+Printer Status Your Enquiry field :true
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC006" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.979">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:01 [main] Log - EnquiriesTest_TC005 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC005
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:34:02 [main] Log - EnquiriesTest_TC006 test is starting...
+Printer Status Send Button :true
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC007[Tom, Nguyễn, 0909789789, tom@gmail.com, Help me, please](1)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="6.275">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:07 [main] Log - EnquiriesTest_TC006 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC006
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:34:08 [main] Log - EnquiriesTest_TC007 test is starting...
+Printer Enquiry Sent Header : ENQUIRY SENT
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC007[Tom, Nguyễn, , tom@gmail.com, Help me, please](2)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="6.038">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:14 [main] Log - EnquiriesTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries/success
+[INFO] 18-12-2024 09:34:16 [main] Log - EnquiriesTest_TC007 test is starting...
+Printer Enquiry Sent Header : ENQUIRY SENT
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC007[Tommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm, Nguyễn, 0909789789, tom@gmail.com, Help me, please](3)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="6.323">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:22 [main] Log - EnquiriesTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries/success
+[INFO] 18-12-2024 09:34:23 [main] Log - EnquiriesTest_TC007 test is starting...
+Printer Enquiry Sent Header : ENQUIRY SENT
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC007[Tom, Nguyennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn, 0909789789, tom@gmail.com, Help me, please](4)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="6.149">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:29 [main] Log - EnquiriesTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries/success
+[INFO] 18-12-2024 09:34:31 [main] Log - EnquiriesTest_TC007 test is starting...
+Printer Enquiry Sent Header : ENQUIRY SENT
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC007[Tom, Nguyễn, 0909789789, tom@gmail.com, Testing by Tom nguyennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn](5)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="5.8">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:37 [main] Log - EnquiriesTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries/success
+[INFO] 18-12-2024 09:34:39 [main] Log - EnquiriesTest_TC007 test is starting...
+Printer Enquiry Sent Header : ENQUIRY SENT
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC008" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.676">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:45 [main] Log - EnquiriesTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries/success
+[INFO] 18-12-2024 09:34:46 [main] Log - EnquiriesTest_TC008 test is starting...
+Printer Status Send Button :false
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC009" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.867">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:51 [main] Log - EnquiriesTest_TC008 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC008
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:34:52 [main] Log - EnquiriesTest_TC009 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC010" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.696">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:34:57 [main] Log - EnquiriesTest_TC009 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC009
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:34:58 [main] Log - EnquiriesTest_TC010 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC011" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.68">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:03 [main] Log - EnquiriesTest_TC010 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC010
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:04 [main] Log - EnquiriesTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC012" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="4.809">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:09 [main] Log - EnquiriesTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:10 [main] Log - EnquiriesTest_TC012 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC013" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.108">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:15 [main] Log - EnquiriesTest_TC012 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC012
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:16 [main] Log - EnquiriesTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC014" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.065">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:18 [main] Log - EnquiriesTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:19 [main] Log - EnquiriesTest_TC014 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC015" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.829">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:21 [main] Log - EnquiriesTest_TC014 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC014
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:23 [main] Log - EnquiriesTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC016" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.688">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:25 [main] Log - EnquiriesTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC015
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:26 [main] Log - EnquiriesTest_TC016 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[0*#5624391](1)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.577">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:28 [main] Log - EnquiriesTest_TC016 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC016
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:29 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[01 23 45 6 7](2)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.625">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:31 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:32 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[012abc345d](3)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.514">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:34 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:35 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[1234567890](4)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.551">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:37 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:38 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[0*# 123 0&amp;!](5)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.548">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:40 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:41 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[0abc1230&amp;!](6)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.466">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:43 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:44 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[1230&amp;!78%](7)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.564">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:45 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:47 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[abc 5241 ab](8)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.48">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:49 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:50 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[123%$ 0 %](9)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.703">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:52 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:53 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC017[123s%$ 0 abc%](10)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.686">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:55 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:35:57 [main] Log - EnquiriesTest_TC017 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[2 0*](1)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.746">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:35:59 [main] Log - EnquiriesTest_TC017 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC017
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:00 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[2*a1](2)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.818">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:03 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:04 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[2 *a](3)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="3.89">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:07 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:09 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[$21x](4)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.739">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:12 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:14 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[2 02](5)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="3.217">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:17 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:18 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC018[843+](6)" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="2.777">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:21 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:23 [main] Log - EnquiriesTest_TC018 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="EnquiriesTest_TC019" classname="com.easyserv.testcases.Motoserve.EnquiriesTest" time="1.691">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:26 [main] Log - EnquiriesTest_TC018 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC018
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:27 [main] Log - EnquiriesTest_TC019 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC001" classname="com.easyserv.testcases.Motoserve.LoginTest" time="1.554">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:28 [main] Log - EnquiriesTest_TC019 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: EnquiriesTest_TC019
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/enquiries
+[INFO] 18-12-2024 09:36:30 [main] Log - LoginTest_TC001 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC002" classname="com.easyserv.testcases.Motoserve.LoginTest" time="1.78">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:31 [main] Log - LoginTest_TC001 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC001
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:33 [main] Log - LoginTest_TC002 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC003" classname="com.easyserv.testcases.Motoserve.LoginTest" time="1.715">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:35 [main] Log - LoginTest_TC002 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC002
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:36 [main] Log - LoginTest_TC003 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC004" classname="com.easyserv.testcases.Motoserve.LoginTest" time="3.137">
+    <failure message="expected [Login successful] but found [Your User Name and Password combination is not correct. Please try again]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Login successful] but found [Your User Name and Password combination is not correct. Please try again]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC004(LoginTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:38 [main] Log - LoginTest_TC003 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC003
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:39 [main] Log - LoginTest_TC004 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC005" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.542">
+    <system-out><![CDATA[[ERROR] 18-12-2024 09:36:42 [main] Log - LoginTest_TC004 test is failed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC004
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:44 [main] Log - LoginTest_TC005 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC006" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.07">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:46 [main] Log - LoginTest_TC005 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC005
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:48 [main] Log - LoginTest_TC006 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC007" classname="com.easyserv.testcases.Motoserve.LoginTest" time="1.786">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:50 [main] Log - LoginTest_TC006 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC006
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:51 [main] Log - LoginTest_TC007 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC008" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.685">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:53 [main] Log - LoginTest_TC007 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC007
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:55 [main] Log - LoginTest_TC008 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC009" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.405">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:36:57 [main] Log - LoginTest_TC008 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC008
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:36:59 [main] Log - LoginTest_TC009 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC010" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.297">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:01 [main] Log - LoginTest_TC009 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC009
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:02 [main] Log - LoginTest_TC010 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC011[49, 12345678](1)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.18">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:05 [main] Log - LoginTest_TC010 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC010
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:06 [main] Log - LoginTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC011[anh@gmail.com, 1234678](2)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.172">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:08 [main] Log - LoginTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:10 [main] Log - LoginTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC011[anh@gmail.com, 1](3)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.145">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:12 [main] Log - LoginTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:13 [main] Log - LoginTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC011[anh@gmail.com, Testing1233333333333](4)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.315">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:15 [main] Log - LoginTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:17 [main] Log - LoginTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC011[anh@gmail.com, Testing123333333334](5)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.283">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:19 [main] Log - LoginTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:20 [main] Log - LoginTest_TC011 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC012" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.551">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:23 [main] Log - LoginTest_TC011 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC011
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:24 [main] Log - LoginTest_TC012 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC013[anh@gmail.com, 12345678](1)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="4.939">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:27 [main] Log - LoginTest_TC012 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC012
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/forgot-password
+[INFO] 18-12-2024 09:37:28 [main] Log - LoginTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC013[anh@gmail.com, 1234567890123456789012](2)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="4.606">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:33 [main] Log - LoginTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:34 [main] Log - LoginTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC013[anh@gmail.com, 12345678@](3)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="4.414">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:39 [main] Log - LoginTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:40 [main] Log - LoginTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC013[anh@gmail.com, Testing1233333333333](4)" classname="com.easyserv.testcases.Motoserve.LoginTest" time="4.772">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:44 [main] Log - LoginTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:46 [main] Log - LoginTest_TC013 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC014" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.36">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:51 [main] Log - LoginTest_TC013 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC013
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/login
+[INFO] 18-12-2024 09:37:52 [main] Log - LoginTest_TC014 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC015" classname="com.easyserv.testcases.Motoserve.LoginTest" time="2.136">
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:54 [main] Log - LoginTest_TC014 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC014
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/register
+[INFO] 18-12-2024 09:37:56 [main] Log - LoginTest_TC015 test is starting...
+]]></system-out>
+  </testcase>
+  <testcase name="LoginTest_TC016" classname="com.easyserv.testcases.Motoserve.LoginTest" time="23.419">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(text(),&apos;Confirm your vehicle&apos;)] (tried for 15 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57107/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5bf5cca913ee3715858e97814b8dc5e6" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(text(),'Confirm your vehicle')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57107/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf5cca913ee3715858e97814b8dc5e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.easyserv.common.ValidateHelper.checkText(ValidateHelper.java:137)
+	at com.easyserv.pages.Motoserve_BookingApp_UAT.LoginPages.VerifyConfirmVehicleHeader(LoginPages.java:153)
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC016(LoginTest.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[[INFO] 18-12-2024 09:37:58 [main] Log - LoginTest_TC015 test is passed.
+ExportData/Screenshots
+ExportData/Screenshots
+Screenshot taken: LoginTest_TC015
+Screenshot taken current URL: https://motorserve-booking.siliconstack.com.au/
+[INFO] 18-12-2024 09:37:59 [main] Log - LoginTest_TC016 test is starting...
+]]></system-out>
+  </testcase>
+</testsuite>

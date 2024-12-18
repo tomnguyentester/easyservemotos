@@ -1,0 +1,758 @@
+<html>
+<head>
+<title>TestNG:  Test_Suite_Motoserve_UAT</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test_Suite_Motoserve_UAT</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>113/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 18 09:28:27 ICT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>599 seconds (599907 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC004()'><b>LoginTest_TC004</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can click <LOGIN> button on "Login" screen  _003</td>
+<td><div><pre>java.lang.AssertionError: expected [Login successful] but found [Your User Name and Password combination is not correct. Please try again]
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC004(LoginTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace81186725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace81186725'><pre>java.lang.AssertionError: expected [Login successful] but found [Your User Name and Password combination is not correct. Please try again]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC004(LoginTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC016()'><b>LoginTest_TC016</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user login success with email/pass _015</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(text(),&apos;Confirm your vehicle&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57107/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf5cca913ee3715858e97814b8dc5e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.easyserv.common.ValidateHelper.checkText(ValidateHelper.java:137)
+	at com.easyserv.pages.Motoserve_BookingApp_UAT.LoginPages.VerifyConfirmVehicleHeader(LoginPages.java:153)
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC016(LoginTest.java:118)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1135528450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1135528450'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(text(),&apos;Confirm your vehicle&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57107/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5bf5cca913ee3715858e97814b8dc5e6
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.easyserv.common.ValidateHelper.checkText(ValidateHelper.java:137)
+	at com.easyserv.pages.Motoserve_BookingApp_UAT.LoginPages.VerifyConfirmVehicleHeader(LoginPages.java:153)
+	at com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC016(LoginTest.java:118)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>23</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC006()'><b>EnquiriesTest_TC006</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify status "Send" button after user input valid data for all fields on "General Enquiries" screen  _005</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC016()'><b>ResetPasswordTest_TC016</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User remove all data in "New Password" field  _015</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC010()'><b>SignUpTest_TC010</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click on Facebook button on "Sign Up" screen _010</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC001()'><b>SignUpTest_TC001</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click on Sign Up hyperlink on the LOGIN TO YOUR ACCOUNT screen  _001</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC003()'><b>ResetPasswordTest_TC003</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify system in case user enter a valid Email  _003</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 123%$ 0 %</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC011()'><b>EnquiriesTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify system in case user remove all data for "Email"  _011</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC018()'><b>ResetPasswordTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "Confirm New Password" field _018<br>Parameters: abc%$#123jue_+7621d</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC010()'><b>EnquiriesTest_TC010</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify system in case user remove all data for "Last Name"  _010</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC022()'><b>ResetPasswordTest_TC022</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User enter newPass&&ConfPass -> Clear newPass  _022</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC017()'><b>ResetPasswordTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: User enter 21 characters in "New Password" field  _015</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC008()'><b>SignUpTest_TC008</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click on Motorserve Privacy Policy> hyperlink with a label <By clicking Sign Up, you have read and agreed to the> on "Sign Up" screen _008</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC009()'><b>SignUpTest_TC009</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click on Google button on "Sign Up" screen _009</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 0*# 123 0&!</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: 2 02</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: uydjeousyd</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC004()'><b>EnquiriesTest_TC004</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify user can choose value from "Suburb" listbox when I input data for fields "Postcode"  _004</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 1234567890</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC011()'><b>LoginTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify System allow user select "Login" button to login _011<br>Parameters: anh@gmail.com, Testing1233333333333</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC006()'><b>SignUpTest_TC006</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can input free-text for Phone Number textbox on "Sign Up" screen  _006</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC011()'><b>LoginTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify System allow user select "Login" button to login _011<br>Parameters: 49, 12345678</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC011()'><b>ResetPasswordTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify that system will back to Reset screen after user click try another email  _011</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: 12 4@#67ab</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: 1234567890</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC014()'><b>ResetPasswordTest_TC014</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user click <Back> icon on Reset password screen  _014</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC005()'><b>SignUpTest_TC005</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can input free-text for Password textbox on "Sign Up" screen  _005</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC001()'><b>ResetPasswordTest_TC001</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify UI of "Reset password" screen as the same Requirement  _001</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC013()'><b>ResetPasswordTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user enter in both 2 textboxs are New Password and Confirm New password on Reset password screen  _013</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC014()'><b>SignUpTest_TC014</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for all fields on "Sign Up" screen _014</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC016()'><b>SignUpTest_TC016</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify System will raise an alerting message “Email already exists. Please login or use another email to continue _016</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC007()'><b>ResetPasswordTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify system in case user action with Back button  _007</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC023()'><b>ResetPasswordTest_TC023</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User enter newPass=21Chars && ConfPass = 123456   _022</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC004()'><b>SignUpTest_TC004</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can input free-text for Email textbox on "Sign Up" screen  _004</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC012()'><b>ResetPasswordTest_TC012</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify UI Reset Change Pass from Your Email  _012</td>
+<td></td>
+<td>24</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC009()'><b>LoginTest_TC009</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can't input more than 20 character for <Password> textbox on "Login" screen  _009</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC018()'><b>SignUpTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify User can't input more than 20 characters on <Password> textbox _017</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: abc 5241 ab</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC007()'><b>EnquiriesTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" success when input data within the allowed range for all fields on "General Enquiries" screen  _007<br>Parameters: Tom, Nguyễn, 0909789789, tom@gmail.com, Help me, please</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC013()'><b>LoginTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case user enter email or pass is invalid _013<br>Parameters: anh@gmail.com, 12345678</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC002()'><b>LoginTest_TC002</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can enter user's email in textbox <Email> on "Log In" screen  _002</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC004()'><b>ResetPasswordTest_TC004</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify system in case user enter email more than 50Chars  _004</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC007()'><b>EnquiriesTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" success when input data within the allowed range for all fields on "General Enquiries" screen  _007<br>Parameters: Tom, Nguyễn, , tom@gmail.com, Help me, please</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC005()'><b>EnquiriesTest_TC005</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify user can enter all field  _005</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC011()'><b>SignUpTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click Log in hyperlink on "Sign Up" screen _011</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC003()'><b>SignUpTest_TC003</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can input free-text for Last Name textbox on "Sign Up" screen  _003</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 123s%$ 0 abc%</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC015()'><b>ResetPasswordTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "New Password" field  _015<br>Parameters: 123456</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 01 23 45 6 7</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC016()'><b>EnquiriesTest_TC016</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input more than 50 characters for field "Email" _016</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC011()'><b>LoginTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify System allow user select "Login" button to login _011<br>Parameters: anh@gmail.com, Testing123333333334</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC006()'><b>LoginTest_TC006</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can't input more than 50 characters for <Email> textbox on "Login" screen  _006</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC005()'><b>ResetPasswordTest_TC005</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify status ResetPass Button after user enter a valid email  _005</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC017()'><b>SignUpTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify User input less than 6 characters for <Password> textbox on "Sign Up" screen _017</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: 022*&%)888</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC001()'><b>LoginTest_TC001</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify UI of "Login" Screen  _001</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC008()'><b>ResetPasswordTest_TC008</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify that user can jump to Sing Up screen  _008</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC025()'><b>ResetPasswordTest_TC025</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user changes password after receiving email about more than 30 minutes  _025</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC019()'><b>EnquiriesTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input data outside the allowed range for field "Phone Number" on "General Enquiries" screen _019</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 0abc1230&!</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC007()'><b>EnquiriesTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" success when input data within the allowed range for all fields on "General Enquiries" screen  _007<br>Parameters: Tom, Nguyễn, 0909789789, tom@gmail.com, Testing by Tom nguyennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 0*#5624391</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC011()'><b>LoginTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify System allow user select "Login" button to login _011<br>Parameters: anh@gmail.com, 1234678</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: 843+</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC008()'><b>LoginTest_TC008</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case missing "Password" field  _008</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC002()'><b>EnquiriesTest_TC002</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify user can click <Motorserve Privacy Policy> hyperlink on "General Enquiries" screen  _002</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC015()'><b>EnquiriesTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input more than 50 characters for field "Last Name" _015</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC012()'><b>EnquiriesTest_TC012</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify system in case user remove all data for "Your Enquiri"  _012</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC007()'><b>EnquiriesTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" success when input data within the allowed range for all fields on "General Enquiries" screen  _007<br>Parameters: Tommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm, Nguyễn, 0909789789, tom@gmail.com, Help me, please</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC021()'><b>ResetPasswordTest_TC021</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User enter "Confirm New Password" field is not mathched _021</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: $21x</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC003()'><b>LoginTest_TC003</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can enter user's password in textbox <Enter your password> on "Log In" screen  _003</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC008()'><b>EnquiriesTest_TC008</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify user don't select data from "Select Store" dropdownlist on "General Enquiries" screen  _008</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC011()'><b>LoginTest_TC011</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify System allow user select "Login" button to login _011<br>Parameters: anh@gmail.com, 1</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC009()'><b>EnquiriesTest_TC009</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify system in case user remove all data for "First Name"  _008</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: 2*a1</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC014()'><b>EnquiriesTest_TC014</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input more than 50 characters for field "First Name" _014</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC006()'><b>ResetPasswordTest_TC006</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify system in case user enter a customer doesn't existed  _006</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC015()'><b>ResetPasswordTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "New Password" field  _015<br>Parameters: 1234567</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: 09 826 837</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC019()'><b>ResetPasswordTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User enter 21 characters in "Confirm New Password" field _019</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC005()'><b>LoginTest_TC005</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case missing "email" field  _005</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC003()'><b>EnquiriesTest_TC003</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify user can choose value from "Select Store" listbox  _003</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC010()'><b>LoginTest_TC010</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify status Login Button after user enter valid email/pass _010</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC007()'><b>EnquiriesTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" success when input data within the allowed range for all fields on "General Enquiries" screen  _007<br>Parameters: Tom, Nguyennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn, 0909789789, tom@gmail.com, Help me, please</td>
+<td></td>
+<td>6</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 1230&!78%</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC012()'><b>SignUpTest_TC012</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can click Back icon on "Sign Up" screen _012</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC013()'><b>LoginTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case user enter email or pass is invalid _013<br>Parameters: anh@gmail.com, Testing1233333333333</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: 2 *a</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC018()'><b>EnquiriesTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Postcode" _018<br>Parameters: 2 0*</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC020()'><b>ResetPasswordTest_TC020</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User enter 21 characters in "Confirm New Password" field _019</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC013()'><b>LoginTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case user enter email or pass is invalid _013<br>Parameters: anh@gmail.com, 1234567890123456789012</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC007()'><b>SignUpTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user click on "Eye Password" icon on <Password> textbox  _007</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC018()'><b>ResetPasswordTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "Confirm New Password" field _018<br>Parameters: 123456</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC002()'><b>ResetPasswordTest_TC002</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify system in case user clear value of Email  _002</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC018()'><b>ResetPasswordTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "Confirm New Password" field _018<br>Parameters: 123456789!@#$%gabd32</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC002()'><b>SignUpTest_TC002</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user can input free-text for First Name textbox on "Sign Up" screen  _002</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC015()'><b>ResetPasswordTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "New Password" field  _015<br>Parameters: abc%$#123jue_+7621d</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC014()'><b>LoginTest_TC014</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can click <Sign up> hyperlink on "Login" screen _014</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC015()'><b>LoginTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can click <Back> button on the left top of "Login" screen _015</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC010()'><b>ResetPasswordTest_TC010</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify that system will back to Login screen after user click LoginNow button  _010</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC012()'><b>LoginTest_TC012</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can click <Forgot password?> hyperlink on "Login" screen _012</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC018()'><b>ResetPasswordTest_TC018</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "Confirm New Password" field _018<br>Parameters: 1234567</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC009()'><b>ResetPasswordTest_TC009</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify that system will jump to checkEmail screen after user click Reset button  _009</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC001()'><b>EnquiriesTest_TC001</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify UI of "General Enquiries" screen as  the same BR  _001</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC013()'><b>EnquiriesTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Email"  _013</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC013()'><b>SignUpTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input valid data all field on "Sign Up" screen _013</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC013()'><b>LoginTest_TC013</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify system in case user enter email or pass is invalid _013<br>Parameters: anh@gmail.com, 12345678@</td>
+<td></td>
+<td>4</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC015()'><b>SignUpTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify system in case User remove all data with each field "Sign Up" screen _015</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.SignUpTest.SignUpTest_TC019()'><b>SignUpTest_TC019</b><br>Test class: com.easyserv.testcases.Motoserve.SignUpTest<br>Test method: Verify user input invalid data for <Phone Number> textbox and input data others fields on "Sign Up" screen _019<br>Parameters: 012345678</td>
+<td></td>
+<td>3</td>
+<td>com.easyserv.testcases.Motoserve.SignUpTest@1fa268de</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.EnquiriesTest.EnquiriesTest_TC017()'><b>EnquiriesTest_TC017</b><br>Test class: com.easyserv.testcases.Motoserve.EnquiriesTest<br>Test method: Verify send "General Enquiries" unsuccess when input invalid data for fields "Phone Number" _017<br>Parameters: 012abc345d</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.EnquiriesTest@4a94ee4</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC015()'><b>ResetPasswordTest_TC015</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify user can enter data within the allowed range in "New Password" field  _015<br>Parameters: 123456789!@#$%gabd32</td>
+<td></td>
+<td>2</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.ResetPasswordTest.ResetPasswordTest_TC024()'><b>ResetPasswordTest_TC024</b><br>Test class: com.easyserv.testcases.Motoserve.ResetPasswordTest<br>Test method: Verify User can unmask and view my entered texts in NewPass/ConfPass field  _024</td>
+<td></td>
+<td>5</td>
+<td>com.easyserv.testcases.Motoserve.ResetPasswordTest@7b9a4292</td></tr>
+<tr>
+<td title='com.easyserv.testcases.Motoserve.LoginTest.LoginTest_TC007()'><b>LoginTest_TC007</b><br>Test class: com.easyserv.testcases.Motoserve.LoginTest<br>Test method: Verify user can't input invalid characters for <Email> textbox on "Login" screen  _007</td>
+<td></td>
+<td>1</td>
+<td>com.easyserv.testcases.Motoserve.LoginTest@6379eb</td></tr>
+</table><p>
+</body>
+</html>
